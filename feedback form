@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Student Feedback Form</title>
+</head>
+<body>
+<h1>🎓 Student Feedback Form</h1>
+<p>Please fill all fields carefully.</p>
+<form>
+<h3>Student Details</h3>
+<label>Name:</label><br>
+<input type="text" required><br><br>
+<label>Email:</label><br>
+<input type="email" required><br><br>
+<label>Course:</label><br>
+<input type="text" required><br><br>
+<label>Semester:</label><br>
+<input type="number" min="1" max="8" required><br><br>
+<hr>
+<h3>ICLA Feedback</h3>
+<label>How was the subject?</label><br>
+<input type="radio" name="s1" required> Excellent
+<input type="radio" name="s1"> Good
+<input type="radio" name="s1"> Average
+<input type="radio" name="s1"> Poor
+<br><br>
+<label>Difficulty Level:</label><br>
+<input type="radio" name="s1d" required> Easy
+<input type="radio" name="s1d"> Medium
+<input type="radio" name="s1d"> Hard
+<br><br>
+<label>Rate (1–10):</label><br>
+<input type="range" min="1" max="10" required>
+<br><br>
+<label>Comments:</label><br>
+<textarea rows="3" cols="40" required></textarea>
+<hr>
+<h3>SMP Feedback</h3>
+<label>How was the subject?</label><br>
+<input type="radio" name="s2" required> Excellent
+<input type="radio" name="s2"> Good
+<input type="radio" name="s2"> Average
+<input type="radio" name="s2"> Poor
+<br><br>
+<label>Difficulty Level:</label><br>
+<input type="radio" name="s2d" required> Easy
+<input type="radio" name="s2d"> Medium
+<input type="radio" name="s2d"> Hard
+<br><br>
+<label>Rate (1–10):</label><br>
+<input type="range" min="1" max="10" required>
+<br><br>
+<label>Comments:</label><br>
+<textarea rows="3" cols="40" required></textarea>
+<hr>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
