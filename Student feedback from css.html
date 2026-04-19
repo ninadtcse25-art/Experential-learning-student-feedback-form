@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Feedback Form</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: Gray;
+}
+form {
+    width: 450px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    color: darkblue;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+input[type="range"] {
+    width: 100%;
+}
+input[type="radio"] {
+    margin-right: 5px;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+</style>
+</head>
+<body>
+<h1> Student Feedback Form</h1>
+<p style="text-align:center;">Please fill all fields carefully.</p>
+<form>
+<h3>Student Details</h3>
+<label>Name:</label>
+<input type="text" required>
+<label>Email:</label>
+<input type="email" required>
+<label>Course:</label>
+<input type="text" required>
+<label>Semester:</label>
+<input type="number" min="1" max="8" required>
+<hr>
+<h3>ICLA Feedback</h3>
+<label>How was the subject?</label><br>
+<input type="radio" name="s1" required> Excellent
+<input type="radio" name="s1"> Good
+<input type="radio" name="s1"> Average
+<input type="radio" name="s1"> Poor
+<br><br>
+<label>Difficulty Level:</label><br>
+<input type="radio" name="s1d" required> Easy
+<input type="radio" name="s1d"> Medium
+<input type="radio" name="s1d"> Hard
+<br><br>
+<label>Rate (1–10):</label>
+<input type="range" min="1" max="10" required>
+<label>Comments:</label>
+<textarea rows="3" required></textarea>
+<hr>
+<h3>SMP Feedback</h3>
+<label>How was the subject?</label><br>
+<input type="radio" name="s2" required> Excellent
+<input type="radio" name="s2"> Good
+<input type="radio" name="s2"> Average
+<input type="radio" name="s2"> Poor
+<br><br>
+<label>Difficulty Level:</label><br>
+<input type="radio" name="s2d" required> Easy
+<input type="radio" name="s2d"> Medium
+<input type="radio" name="s2d"> Hard
+<br><br>
+<label>Rate (1–10):</label>
+<input type="range" min="1" max="10" required>
+<label>Comments:</label>
+<textarea rows="3" required></textarea>
+<hr>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
